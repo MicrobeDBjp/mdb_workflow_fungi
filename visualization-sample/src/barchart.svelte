@@ -1,0 +1,48 @@
+<chart>
+    
+    <script type="module" src="https://togostanza.github.io/metastanza/barchart.js" async></script>
+
+    <style>
+        togostanza-barchart {
+          --togostanza-background-color: #fffafa;
+          --togostanza-background-color: #fcf8f8;
+        }
+    </style>
+
+	<togostanza-barchart
+	chart-type="grouped"
+	data-url="./data/expression_gene_1.json"
+	data-type="json"
+	category="RefEx_Sample_ID"
+	value="log2_Mean"
+	group-by="Sample types category"
+	category-title=""
+	value-title=""
+	legend-title=""
+	custom-css-url=""
+	width="500"
+	height="1800"
+	padding="50"
+	padding-inner="0.1"
+	padding-outer="0.4"
+	xaxis-placement="bottom"
+	yaxis-placement="left"
+	xgrid="false"
+	ygrid="true"
+	xtick="false"
+	ytick="true"
+	xlabel-max-width="200"
+	ylabel-max-width="400"
+	xlabel-angle="0"
+	ylabel-angle="0"
+	xlabel-padding="5"
+	ylabel-padding="5"
+	xlabel-alignment="left"
+	ylabel-alignment="right"
+	xtitle-padding="10"
+	ytitle-padding="10"
+	bar-width="0.8"
+	legend="true"
+	legend-padding="18"
+	></togostanza-barchart>
+</chart>
